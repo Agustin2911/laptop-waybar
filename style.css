@@ -1,0 +1,90 @@
+/* Barra estilo macOS */
+#waybar {
+  background: rgba(30, 30, 30, 0.9);
+  color: #ffffff;
+  font-family: "Inter", "Roboto", "Noto Sans", sans-serif;
+  font-size: 13px;
+  padding: 0 12px;
+  border: none;
+}
+
+/* Logo */
+#custom-logo {
+  font-size: 16px;
+  padding-right: 12px;
+  font-weight: bold;
+}
+
+/* App activa (Finder style) */
+#window {
+  font-weight: 600;
+}
+
+/* Reloj centrado */
+#clock {
+  font-weight: 500;
+}
+
+/* Módulos de la derecha */
+#battery,
+#network,
+#pulseaudio {
+  padding: 0 8px;
+}
+
+/* Íconos WiFi estilo macOS */
+#network {
+  font-weight: 500;
+}
+/* Workspaces estilo macOS limpio */
+#workspaces {
+  margin: 0 8px;
+}
+
+#workspaces button {
+  background: transparent;
+  color: #cccccc;
+  border: none;
+  padding: 4px 10px;
+  margin: 0 3px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+/* Workspace activo */
+#workspaces button.focused {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+/* Workspace con ventana abierta */
+#workspaces button.visible {
+  color: #ffffff;
+}
+
+/* Hover */
+#workspaces button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+/* Inactivo */
+#workspaces button.empty {
+  color: #666666;
+}
+/* Botón Wofi */
+#custom-wofi {
+  padding: 0 10px;
+  font-size: 14px;
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+#custom-wofi:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+

@@ -1,0 +1,82 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  "spacing": 8,
+
+  "modules-left": ["custom/logo", "sway/window","workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["network", "pulseaudio", "battery"],
+
+  "custom/logo": {
+    "format": " ",   // logo de Debian (nerd font) o podés usar un SVG
+    "tooltip": false
+  },
+
+
+  "workspaces": {
+    "disable-scroll": true,
+    "active-only": false,
+    "all-outputs": true,
+    "warp-on-scroll": false,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    }
+  },
+
+
+  "sway/window": {
+    "format": "{app_id}",
+    "separate-outputs": true,
+    "tooltip": false
+  },
+
+  "window": {
+    "format": "{}",
+    "max-length": 30
+  },
+
+  "clock": {
+    "format": "{:%a %I:%M %p}",
+    "tooltip": false
+  },
+
+  "battery": {
+    "format": "{capacity}% ",
+    "format-charging": "{capacity}% ",
+    "tooltip": false
+  },
+
+
+	"pulseaudio": {
+	  "format": "{icon}  {volume}%",
+	  "format-bluetooth": "{icon}  {volume}%",
+	  "format-muted": " Muted",     // ícono cuando muteado
+	  "format-icons": {
+	    "headphones": "",
+	    "handsfree": "",
+	    "headset": "",
+	    "phone": "",
+	    "portable": "",
+	    "car": "",
+	    "default": ["", "", ""]   // bajo, medio, alto
+	  },
+	  "tooltip": false
+	},
+
+	"network": {
+	  "format-wifi": "    {essid}",
+	  "format-ethernet": " {ifname}",
+	  "format-disconnected": " No network", // sin internet
+	  "tooltip": false
+	}
+}
+
