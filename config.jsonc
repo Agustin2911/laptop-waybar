@@ -6,14 +6,20 @@
 
   "modules-left": ["custom/logo", "sway/window","sway/workspaces","tray"],
   "modules-center": ["clock"],
-  "modules-right": ["network", "pulseaudio", "battery"],
+  "modules-right": ["network", "pulseaudio", "battery","custom/rofi"],
 
   "custom/logo": {
     "format": " ",   // logo de Debian (nerd font) o podés usar un SVG
     "tooltip": false
   },
 
-
+  
+  "custom/rofi": {
+    "format": "☰  ",
+    "on-click": "wofi --show drun --allow-images",
+    "escape": true,
+    "tooltip": false
+  },
 
   "sway/window": {
     "format": "{app_id}",
