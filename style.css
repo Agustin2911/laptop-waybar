@@ -54,27 +54,9 @@
 
 /* Workspace activo */
 #workspaces button.focused {
-  background: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
-  font-weight: 600;
-  border-radius: 12px;
-}
-
-/* Workspace con ventana abierta */
-#workspaces button.visible {
   color: #ffffff;
 }
 
-/* Hover */
-#workspaces button:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-}
-
-/* Inactivo */
-#workspaces button.empty {
-  color: #666666;
-}
 /* Botón Wofi */
 #custom-wofi {
   padding: 0 10px;

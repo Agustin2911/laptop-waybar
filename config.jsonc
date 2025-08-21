@@ -4,7 +4,7 @@
   "height": 28,
   "spacing": 8,
 
-  "modules-left": ["custom/logo", "sway/window","workspaces"],
+  "modules-left": ["custom/logo", "sway/window","sway/workspaces","tray"],
   "modules-center": ["clock"],
   "modules-right": ["network", "pulseaudio", "battery"],
 
@@ -13,24 +13,6 @@
     "tooltip": false
   },
 
-
-  "workspaces": {
-    "disable-scroll": true,
-    "active-only": false,
-    "all-outputs": true,
-    "warp-on-scroll": false,
-    "format": "{icon}",
-    "format-icons": {
-      "1": "1",
-      "2": "2",
-      "3": "3",
-      "4": "4",
-      "5": "5",
-      "6": "6",
-      "7": "7",
-      "8": "8"
-    }
-  },
 
 
   "sway/window": {
@@ -57,9 +39,9 @@
 
 
 	"pulseaudio": {
-	  "format": "{icon}  {volume}%",
+	  "format": "{icon}    {volume}%",
 	  "format-bluetooth": "{icon}  {volume}%",
-	  "format-muted": " Muted",     // ícono cuando muteado
+	  "format-muted": "󰝟  muted",     // ícono cuando muteado
 	  "format-icons": {
 	    "headphones": "",
 	    "handsfree": "",
