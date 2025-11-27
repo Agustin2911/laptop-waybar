@@ -65,6 +65,10 @@
 	  "format-ethernet": " {ifname}",
 	  "format-disconnected": " No network", // sin internet
 	  "tooltip": false
-	}
+	},
+  "tray": {
+    "icon-size": 15,
+    "spacing": 6
+  },
 }
 
