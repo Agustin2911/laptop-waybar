@@ -63,7 +63,7 @@
 	"network": {
 	  "format-wifi": "    {essid}",
 	  "format-ethernet": " {ifname}",
-	  "format-disconnected": " No network", // sin internet
+	  "format-disconnected": "  No network", // sin internet
 	  "tooltip": false
 	},
   "tray": {
